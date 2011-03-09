@@ -102,6 +102,12 @@ By default, the dispatcher looks for managers matching the project's directory n
     ~/bizconf $ specjour listen -p bizconf_09
     ~/bizconf $ specjour -a bizconf_09
 
+## Working with git
+Commit the .specjour directory but ignore the performance file. The specjour
+
+    $ cat .gitignore
+    /.specjour/performance
+
 ## Compatibility
 
 * RSpec 2
