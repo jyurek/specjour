@@ -61,7 +61,7 @@ module Specjour
       worker_pids.clear
       (1..worker_size).each do |index|
         worker_pids << fork do
-          exec "specjour work #{worker_options(index)}"
+          exec "bundle exec specjour work #{worker_options(index)}"
         end
       end
       Process.waitall
